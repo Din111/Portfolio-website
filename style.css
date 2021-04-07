@@ -239,7 +239,6 @@ p {
 /* hero section  */
 
 #hero {
-  background-image: url(./images/hero-bg.png);
   background-image: url(./images/laptop.jpg);
   background-size: cover;
   background-position: top center;
@@ -853,6 +852,9 @@ p {
 
   #about .col-right h2 {
     font-size: 2.8rem;
+  }
+  #about .col-right .cta {
+    font-size: 2.5rem;
   }
 }
 
