@@ -36,7 +36,7 @@ img {
   width: 100%;
   min-width: 70px;
   min-height: 70px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 p {
@@ -59,15 +59,15 @@ p {
 }
 
 .section-title span {
-  color: #ff4d2d;
+  color: #33a9c2;
 }
 
 .cta {
   display: inline-block;
   padding: 10px 30px;
-  color: #ff4d2d;
+  color: #33a9c2;
   background-color: transparent;
-  border: 2px solid #ff4d2d;
+  border: 2px solid #33a9c2;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -77,7 +77,7 @@ p {
 }
 .cta:hover {
   color: white;
-  background-color: #ff4d2d;
+  background-color: #33a9c2;
 }
 
 .brand h1 {
@@ -87,7 +87,7 @@ p {
 }
 
 .brand h1 span {
-  color: #ff4d2d;
+  color: #33a9c2;
 }
 /* End of common classes */
 
@@ -169,7 +169,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-  color: #ff4d2d;
+  color: #33a9c2;
 }
 
 #header .hamburger {
@@ -289,7 +289,7 @@ p {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #ff4d2d;
+  background-color: #33a9c2;
   animation: text_reveal_box 1s ease;
   animation-delay: 0.3s;
 }
@@ -515,6 +515,10 @@ p {
   width: 100%;
 }
 
+#about .col-left .about-img img {
+  object-fit: cover;
+}
+
 #about .col-left .about-img::after {
   content: "";
   position: absolute;
@@ -522,7 +526,7 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid #ff4d2d;
+  border: 7px solid #33a9c2;
   z-index: -1;
 }
 
@@ -575,6 +579,7 @@ p {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
+  color: black;
 }
 
 #contact .contact-info h2 {
@@ -655,7 +660,7 @@ p {
 
 @keyframes text_reveal_name {
   100% {
-    color: #ff4d2d;
+    color: #33a9c2;
   }
 }
 
@@ -718,7 +723,7 @@ p {
     top: 34px;
     height: 98%;
     width: 98%;
-    border: 10px solid #ff4d2d;
+    border: 10px solid #33a9c2;
   }
 
   #about .col-right {
@@ -748,31 +753,40 @@ p {
   }
 
   #contact .contact-item {
+    padding: 30px 30px 15px 30px;
+  }
+
+  #contact a .contact-item {
     width: 30%;
     flex-direction: row;
     margin: 0;
   }
 
-  #contact .contact-item .icon {
+  #contact a .contact-item .icon {
     height: 100px;
     width: 100px;
   }
 
-  #contact .contact-item .icon img {
+  #contact a .contact-item .icon img {
     object-fit: contain;
   }
 
-  #contact .contact-item .contact-info {
+  #contact a .contact-item .contact-info {
     width: 100%;
     text-align: left;
     padding-left: 20px;
   }
-  #contact .contact-info h2 {
+  #contact a .contact-info h2 {
     white-space: nowrap;
-    width: 205px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  #contact a .contact-info h2:hover {
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
   }
 }
 
