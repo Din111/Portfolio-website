@@ -80,13 +80,13 @@ p {
   background-color: #33a9c2;
 }
 
-.brand h1 {
+.logo h1 {
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
 }
 
-.brand h1 span {
+.logo h1 span {
   color: #33a9c2;
 }
 /* End of common classes */
@@ -236,16 +236,16 @@ p {
 
 /* End of Header section */
 
-/* hero section  */
+/* home section  */
 
-#hero {
+#home {
   background-image: url(./images/laptop.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
   z-index: 1;
 }
-#hero::after {
+#home::after {
   content: "";
   position: absolute;
   left: 0;
@@ -256,14 +256,14 @@ p {
   opacity: 0.7;
   z-index: -1;
 }
-#hero .hero {
+#home .home {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
   justify-content: flex-start;
 }
 
-#hero h1 {
+#home h1 {
   display: block;
   width: fit-content;
   font-size: 4rem;
@@ -272,18 +272,18 @@ p {
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#home h1:nth-child(1) {
   animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+#home h1:nth-child(2) {
   animation-delay: 2s;
 }
-#hero h1:nth-child(3) {
+#home h1:nth-child(3) {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
 
-#hero h1 span {
+#home h1 span {
   position: absolute;
   top: 0;
   left: 0;
@@ -293,17 +293,17 @@ p {
   animation: text_reveal_box 1s ease;
   animation-delay: 0.3s;
 }
-#hero h1:nth-child(1) span {
+#home h1:nth-child(1) span {
   animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span {
+#home h1:nth-child(2) span {
   animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span {
+#home h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
 
-/* end of hero section  */
+/* end of home section  */
 
 /* services section */
 
@@ -460,6 +460,10 @@ p {
   transition: 0.3s ease transform;
 }
 
+#projects .project-img .att {
+  padding: 20px;
+}
+
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
@@ -502,7 +506,6 @@ p {
 }
 
 #about .col-right .cta {
-  color: black;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
@@ -778,8 +781,8 @@ p {
   }
   #contact a .contact-info h2 {
     white-space: nowrap;
-    width: 100px;
-    height: 40px;
+    min-width: 100px;
+    height: 45px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -801,7 +804,7 @@ p {
     font-size: 2rem;
   }
 
-  #hero h1 {
+  #home h1 {
     font-size: 6rem;
   }
   .cta {
@@ -839,7 +842,7 @@ p {
     font-size: 3rem;
   }
 
-  .brand h1 {
+  .logo h1 {
     font-size: 3.5rem;
   }
 
